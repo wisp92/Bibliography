@@ -1,0 +1,435 @@
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                               Macros                               │
+% └────────────────────────────────────────────────────────────────────┘
+
+@string(and = " and ")
+@string(in  = ", ")
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                             Countires                              │
+% └────────────────────────────────────────────────────────────────────┘
+
+@string(AT = "Austria")
+@string(DE = "Germany")
+@string(JP = "Japan")
+@string(MX = "México")
+@string(UK = "United Kingdom")
+@string(US = "United States")
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                     United States: State Names                     │
+% └────────────────────────────────────────────────────────────────────┘
+
+@string(US_AZ = "Arizona" # in # US)
+@string(US_CA = "California" # in # US)
+@string(US_MA = "Massachusetts" # in # US)
+@string(US_MD = "Maryland" # in # US)
+@string(US_NJ = "New Jersey" # in # US)
+@string(US_NV = "Nevada" # in # US)
+@string(US_NY = "New York" # in # US)
+@string(US_PA = "Pennsylvania" # in # US)
+@string(US_RI = "Rhode Island" # in # US)
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                           Organizations                            │
+% └────────────────────────────────────────────────────────────────────┘
+
+@string(AAAS              = "{AAAS}")
+@string(ACM               = "{ACM} Inc.")
+@string(ACM_SIGACT        = "{ACM} {SIGACT}")
+@string(ACM_SIGecom       = "{ACM} {SIGecom}")
+@string(AEA               = "{A}merican {E}conomic {A}ssociation")
+@string(AMS               = "{A}merican {M}athematical {S}ociety")
+@string(APS               = "{A}merican {P}hysical {S}ociety")
+@string(CIT               = "{C}alifornia {I}nstitute of {T}echnology")
+@string(CUPress           = "{C}ambridge {U}niversity {P}ress")
+@string(Elsevier          = "{E}lsevier Inc.")
+@string(ES                = "{E}conometric {S}ociety")
+@string(EUV               = "{E}uropa-{U}niversität {V}iadrina")
+@string(IEEE              = "{IEEE}")
+@string(IEEE_CIS          = "{IEEE} {CIS}")
+@string(IEEE_CSS          = "{IEEE} {CSS}")
+@string(INFORMS           = "{INFORMS}")
+@string(MITPress          = "{MIT} {P}ress")
+@string(NAS               = "{N}ational {A}cademy of {S}ciences")
+@String(NeurIPSFoundation = "{N}eur{IPS} {F}oundation Inc.")
+@string(PH                = "{P}rentice {H}all")
+@string(PMSJ              = "{P}hysico-{M}athematical {S}ociety of {J}apan")
+@string(PrincetonUni      = "{P}rinceton {U}niversity")
+@string(RS                = "{R}oyal {S}ociety") 
+@string(SIAM              = "{SIAM}")
+@string(Springer          = "{S}pringer")
+@string(SpringerNature    = "{S}pringer {N}ature Limited")
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                             Publishers                             │
+% └────────────────────────────────────────────────────────────────────┘
+
+@xdata(Publisher:AAAS,
+  publisher = AAAS
+)
+
+@xdata(Publisher:ACM,
+  publisher = ACM,
+  location  = "New York" # in # US_NY
+)
+
+@xdata(Publisher:AEA,
+  publisher = AEA
+)
+
+@xdata(Publisher:AMS,
+  publisher = AMS,
+  location = "Providence" # in # US_RI
+)
+
+@xdata(Publisher:APS,
+  publisher = APS,
+  location = "College Park" # in # US_MD
+)
+
+@xdata(Publisher:CUPress,
+  publisher = CUPress,
+  location = "Cambridge" # in # UK
+)
+
+@xdata(Publisher:Elsevier,
+  publisher = Elsevier
+)
+
+@xdata(Publisher:ES,
+  publisher = ES
+)
+
+@xdata(Publisher:IEEE,
+  publisher = IEEE
+)
+
+@xdata(Publisher:INFORMS,
+  publisher = INFORMS
+)
+
+@xdata(Publisher:MITPress,
+  publisher = MITPress,
+  location = "Cambridge" # in # US_MA, 
+)
+
+@xdata(Publisher:NAS,
+  publisher = NAS
+)
+@xdata(Publisher:NeurIPSFoundation,
+  publisher = NeurIPSFoundation
+)
+
+@xdata(Publisher:PH,
+  publisher = PH,
+  location = "Upper Saddle River" # in # US_NJ
+)
+
+@xdata(Publisher:PMSJ,
+  publisher = PMSJ,
+  location = "Tokyo" # in # JP
+)
+
+@xdata(Publisher:PrincetonUni,
+  publisher = PrincetonUni,
+  location = "Princeton" # in # US_NJ
+)
+
+@xdata(Publisher:RS,
+  publisher = RS
+)
+
+@xdata(Publisher:SIAM,
+  publisher = SIAM,
+  location = "Philadelphia" # in # US_PA
+)
+
+@xdata(Publisher:Springer,
+  publisher = Springer,
+  location = "Berlin" # in # DE
+)
+
+@xdata(Publisher:SpringerNature,
+  publisher = SpringerNature
+)
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                            Institutions                            │
+% └────────────────────────────────────────────────────────────────────┘
+
+@xdata(Institution:EUV,
+  institution = EUV
+)
+
+@xdata(Institution:CIT,
+  institution = CIT,
+  location = "Pasadena" # in # US_CA
+)
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                              Authors                               │
+% └────────────────────────────────────────────────────────────────────┘
+
+@string(Ahmadi          = "Ahmadi, Amir Ali")
+@string(Akiyama         = "Akiyama, Eizo")
+@string(Bailey          = "Bailey, James P.")
+@string(Barto           = "Barto, Andrew Gehret")
+@string(Battaglia       = "Battaglia, Peter")
+@string(Benita          = "Benita, Francisco")
+@string(Bolle           = "Bolle, Friedel")
+@string(Bongard         = "Bongard, Joshua Clifford")
+@string(Brandt          = "Brandt, Felix")
+@string(Brunton         = "Brunton, Steven Lee")
+@string(Camerer         = "Camerer, Colin")
+@string(Cassandras      = "Cassandras, Christos George")
+@string(Chen            = "Chen, Zhao")
+@string(Cheung          = "Cheung, Yun Kuen")
+@string(CranmerKyle     = "Cranmer, Kyle")
+@string(CranmerMiles    = "Cranmer, Miles")
+@string(Cronert         = "Crönert, Tobias")
+@string(Curmei          = "Curmei, Mihaela")
+@string(Daskalakis      = "Daskalakis, Constantinos")
+@string(Delzell         = "Delzell, Charles Neal")
+@string(Farmer          = "Farmer, J. Doyne")
+@string(Feng            = "Feng, Jiahai")
+@string(Fischer         = "Fischer, Felix")
+@string(Giannou         = "Giannou, Angeliki")
+@string(Goldberg        = "Goldberg, Paul W.")
+@string(Gonzalez        = "Gonzalez, Alvaro Sanchez")
+@string(Hall            = "Hall, Georgina")
+@string(Harsanyi        = "Harsanyi, John Charles")
+@string(Hart            = "Hart, Sergiu")
+@string(HoShirley       = "Ho, Shirley")
+@string(HoTeckHua       = "Ho, Teck-Hua")
+@string(Hoen            = {family={Hoen}, given={Pieter Jan}, prefix={’t}})
+@string(Hofbauer        = "Hofbauer, Josef")
+@string(Holzer          = "Holzer, Markus")
+@string(Hu              = "Hu, Wenjun")
+@string(Icke            = "Icke, Ilknur")
+@string(Isermann        = "Isermann, Rolf")
+@string(Kaiser          = "Kaiser, Eurika")
+@string(Karniadakis     = "Karniadakis, George Em")
+@string(Khadir          = "Khadir, Bachir El")
+@string(Kutz            = "Kutz, Jose Nathan")
+@string(Lasserre        = "Lasserre, Jean Bernard")
+@string(Laurent         = "Laurent, Monique")
+@string(Leonardos       = "Leonardos, Stefanos")
+@string(Lipson          = "Lipson, Hod")
+@string(LiuYang         = "Liu, Yang")
+@string(LiuZiming       = "Liu, Ziming")
+@string(Ljung           = "Ljung, Lennart")
+@string(Lu              = "Lu, Fei")
+@string(Maggioni        = "Maggioni, Mauro")
+@string(MasColell       = "Mas-Colell, Andreu")
+@string(Mertikopoulos   = "Mertikopoulos, Panayotis")
+@string(Milionis        = "Milionis, Jason")
+@string(Minner          = "Minner, Stefan")
+@string(Monnot          = "Monnot, Barnabé")
+@string(Munchhof        = "Münchhof, Marco")
+@string(Nagumo          = "Nagumo, Mitio")
+@string(Nash            = {family={Nash}, given={John Forbes}, suffix={Jr}})
+@string(Neto            = "Neto, Orisvaldo")
+@string(Overman         = "Overman, William")
+@string(Panageas        = "Panageas, Ioannis")
+@string(Papadimitriou   = "Papadimitriou, Christos Harilaos")
+@string(Parrilo         = "Parrilo, Pablo A.")
+@string(Paschalidis     = "Paschalidis, Ioannis Ch.")
+@string(Perdikaris      = "Perdikaris, Paris")
+@string(Piliouras       = "Piliouras, Georgios")
+@string(Pourazarm       = "Pourazarm, Sepideh")
+@string(Prestel         = "Prestel, Alexander")
+@string(Proctor         = "Proctor, Joshua L.")
+@string(Putinar         = "Putinar, Mihai")
+@string(Raissi          = "Raissi, Maziar")
+@string(Rosenthal       = "Rosenthal, Robert Wernick")
+@string(Rudy            = "Rudy, Samuel H.") 
+@string(Sandholm        = "Sandholm, William Howard")
+@string(Sato            = "Sato, Yuzuru")
+@string(Sakos           = "Sakos, Iosif")
+@string(Schmidt         = "Schmidt, Michael")
+@string(Smale           = "Smale, Stephen")
+@string(Spendlove       = "Spendlove, Kelly")
+@string(Spergel         = "Spergel, David")
+@string(Stavroulakis    = "Stavroulakis, Stelios Andrew")
+@string(Sullivant       = "Sullivant, Seth")
+@string(Sun             = "Sun, Hao")
+@string(Sutton          = "Sutton, Richard Stuart")
+@string(Swinkels        = "Swinkels, Jeroen M.")
+@string(Tan             = "Tan, Andrew")
+@string(Tang            = "Tang, Sui")
+@string(Tao             = "Tao, Yixin")
+@string(Tegmark         = "Tegmark, Max")
+@string(Thomas          = "Thomas, Rekha Rachel")
+@string(Tian            = "Tian, Haiyan")
+@string(Tuyls           = "Tuyls, Karl")
+@string(Udrescu         = "Udrescu, Silviu-Marian")
+@string(Vanschoenwinkel = "Vanschoenwinkel, Bram")
+@string(Vlatakis        = "Vlatakis-Gkaragkounis, Emmanouil-Vasileios")
+@string(Wang            = "Wang, Zhiwei")
+@string(Weibull         = "Weibull, Jörgen W."),
+@string(Wu              = "Wu, Tailin") 
+@string(Xu              = "Xu, Rui")
+@string(Zhang           = "Zhang, Gang")
+@string(ZhangJing       = "Zhang, Jing")
+@string(Zhong           = "Zhong, Ming")
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                         Technical Reports                          │
+% └────────────────────────────────────────────────────────────────────┘
+
+@xdata(EUVDiscussionPapers,
+  type  = {Discussion Paper},
+  issn  = {1860-0921},
+  xdata = {Institution:EUV}
+)
+
+
+% ┌────────────────────────────────────────────────────────────────────┐
+% │                              Jounrals                              │
+% └────────────────────────────────────────────────────────────────────┘
+
+@xdata(Journal:AAMAS,
+  journaltitle = {Autonomous Agents and Multi-Agent Systems},
+  issn         = {1573-7454},
+  xdata        = {Publisher:SpringerNature}
+)
+
+@xdata(Journal:ACM_TEC,
+  journaltitle = {{ACM} Transactions on Economics and Computation},
+  issn         = {2167-8383},
+  xdata        = {Publisher:ACM}
+)
+
+@xdata(Journal:AER,
+  journaltitle = {American Economic Review},
+  issn         = {1944-7981},
+  xdata        = {Publisher:AEA}
+)
+
+@xdata(Journal:AnalMath,
+  journaltitle = {Annals of Mathematics},
+  issn         = {0003-486X},
+  xdata        = {Publisher:PrincetonUni}
+)
+
+@xdata(Journal:CommunACM,
+  journaltitle = {Communications of the {ACM}},
+  issn         = {1557-7317},
+  xdata        = {Publisher:ACM}
+)
+
+@xdata(Journal:Econometrica,
+  journaltitle = {Econometrica},
+  issn         = {1468-0262}, 
+  xdata        = {Publisher:ES}
+)
+
+@xdata(Journal:GEB,
+  journaltitle = {Games and Economic Behavior},
+  issn         = {0899-8256},
+  xdata        = {Publisher:Elsevier}
+)
+
+@xdata(Journal:IEEEAccess,
+  journaltitle = {IEEE Access},
+  issn         = {2169-3536},
+  xdata        = {Publisher:IEEE}
+)
+
+@xdata(Journal:IntJGT,
+  journaltitle = {International Journal of Game Theory},
+  issn         = {1432-1270},
+  xdata        = {Publisher:SpringerNature}
+)
+
+@xdata(Journal:JET,
+  journaltitle = {Journal of Economic Theory},
+  issn         = {1095-7235},
+  xdata        = {Publisher:Elsevier}
+)
+
+@xdata(Journal:JCP,
+  journaltitle = {Journal of Computational Physics},
+  issn         = {1090-2716},
+  xdata        = {Publisher:Elsevier}
+)
+
+@xdata(Journal:JCSS,
+  journaltitle = {Journal of Computer and System Sciences},
+  issn         = {1090-2724},
+  xdata        = {Publisher:Elsevier}
+)
+
+@xdata(Journal:MathProg,
+  journaltitle = {Mathematical Programming},
+  issn         = {1436-4646},
+  xdata        = {Publisher:SpringerNature}
+)
+
+@xdata(Journal:NatCommun,
+  journaltitle = {Nature Communications},
+  issn         = {2041-1723},
+  xdata        = {Publisher:SpringerNature}
+)
+
+@xdata(Journal:OR,
+  journaltitle = {Operations Research},
+  issn         = {1526-5463},
+  xdata        = {Publisher:INFORMS}
+)
+
+@xdata(Journal:PARS_A,
+  journaltitle = {Proceedings of the {R}oyal {S}ociety {A}},
+  issn         = {1471-2946},
+  xdata        = {Publisher:RS}
+)
+
+@xdata(Jouranl:PLR,
+  journaltitle = {Physical Review Letters},
+  issn         = {1079-7114},
+  xdata        = {Publisher:APS}
+)
+
+@xdata(Journal:PNAS,
+  journaltitle = {Proceedings of the {N}ational {A}cademy of {S}ciences},
+  issn         = {1557-7317},
+  xdata        = {Publisher:NAS}
+)
+
+@xdata(Journal:SciAdv,
+  journaltitle = {Science Advances},
+  issn         = {2375-2548},
+  xdata        = {Publisher:AAAS}
+)
+
+@xdata(Journal:Science,
+  journaltitle = {Science},
+  issn         = {0036-8075},
+  xdata        = {Publisher:AAAS}
+)
+
+@xdata(Journal:SIAM_JO,
+  journaltitle = {{SIAM} Journal on Optimization},
+  issn         = {1052-6234},
+  xdata        = {Publisher:SIAM}
+)
+
+@xdata(Journal:SIAM_Rev,
+  journaltitle = {{SIAM} Review},
+  issn         = {1095-7200},
+  xdata        = {Publisher:SIAM}
+)
+
+@xdata(Journal:PPMSJ,
+  journaltitle = {Proceedings of the {P}hysico-{M}athematical {S}ociety of {J}apan},
+  issn         = {2185-2707},
+  xdata        = {Publisher:PMSJ}
+)
