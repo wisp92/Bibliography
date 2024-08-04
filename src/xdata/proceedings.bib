@@ -10,6 +10,7 @@
 @string(IEEE_CDC = "{IEEE} {C}onference on {D}ecision and {C}ontrol")
 @string(NeurIPS  = "{N}eural {I}nformation {P}rocessing {S}ystems")
 @string(STOC     = "{S}ymposium on {T}heory of {C}omputing")
+@string(WINE     = "{W}eb and {I}nternet {E}conomics")
 
 
 % ┌────────────────────────────────────────────────────────────────────┐
@@ -30,6 +31,12 @@
 	series = {Proceedings of Symposia in Applied Mathematics},
 	issn   = {2324-7088},
 	xdata  = {Publisher:AMS}
+)
+
+@xdata(Series:LNCS,
+	series = {Lecture Notes in Computer Science},
+	issn   = {1611-3349},
+	xdata  = {Publisher:Springer}
 )
 
 @proceedings{AMS_SC20_sum,
@@ -125,6 +132,16 @@
 	xdata      = {Series:AdvNeurIPS}
 }
 
+@proceedings{NeurIPS23,
+	number     = 36,
+	date       = {2023-09-22},
+	eventdate  = {2023-12-10/2023-12-16},
+	eventtitle = NeurIPS,
+	isbn       = {978-1-7138-9992-1},
+	maintitle  = {37th Conference on {N}eural {I}nformation {P}rocessing {S}ystems ({N}eur{IPS} 2023)},
+	xdata      = {Series:AdvNeurIPS}
+}
+
 @proceedings{STOC21,
 	date         = {2021-06-15},
 	eventdate    = {2021-06-21/2021-06-25},
@@ -133,4 +150,15 @@
 	mainsubtitle = {Proceedings of the 53rd Annual {ACM} {SIGACT} {S}ymposium on {T}heory of {C}omputing},
 	maintitle    = {{STOC} 2021},
 	xdata        = {Publisher:ACM}
+}
+
+@proceedings{WINE20,
+	number       = 12495,
+	date         = {2020-09-07},
+	eventdate    = {2020-12-07/2020-12-11},
+	eventtitle   = WINE,
+	isbn         = {978-3-030-64946-3},
+	mainsubtitle = {16th International Conference, {WINE} 2020, {B}eijing, {C}hina, {D}ecember 7–11, 2020, Proceedings},
+	maintitle    = {{W}eb and {I}nternet {E}conomics},
+	xdata        = {Series:LNCS}
 }
