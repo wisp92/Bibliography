@@ -2,55 +2,55 @@
 % │                         Conference Titles                          │
 % └────────────────────────────────────────────────────────────────────┘
 
-@string(AMS_SC   = "{AMS} {S}hort {C}ourse")
-@string(CEC      = "{C}ongress on {E}volutionary {C}omputation")
-@string(COLT     = "{C}onference on {L}earning {T}heory")
-@string(EC       = "{E}conomics and {C}omputation")
-@string(ICLR     = "{I}nternational {C}onference on {L}earning {R}epresentations")
-@string(IEEE_CDC = "{IEEE} {C}onference on {D}ecision and {C}ontrol")
-@string(NeurIPS  = "{N}eural {I}nformation {P}rocessing {S}ystems")
-@string(STOC     = "{S}ymposium on {T}heory of {C}omputing")
-@string(WINE     = "{W}eb and {I}nternet {E}conomics")
+@string{AMS_SC   = {{AMS} {S}hort {C}ourse}}
+@string{CEC      = {{C}ongress on {E}volutionary {C}omputation}}
+@string{COLT     = {{C}onference on {L}earning {T}heory}}
+@string{EC       = {{E}conomics and {C}omputation}}
+@string{ICLR     = {{I}nternational {C}onference on {L}earning {R}epresentations}}
+@string{IEEE_CDC = {{IEEE} {C}onference on {D}ecision and {C}ontrol}}
+@string{NeurIPS  = {{N}eural {I}nformation {P}rocessing {S}ystems}}
+@string{STOC     = {{S}ymposium on {T}heory of {C}omputing}}
+@string{WINE     = {{W}eb and {I}nternet {E}conomics}}
 
 
 % ┌────────────────────────────────────────────────────────────────────┐
 % │                       Conference Proceedings                       │
 % └────────────────────────────────────────────────────────────────────┘
 
-@xdata(Series:AdvNeurIPS,
+@xdata{Series:AdvNeurIPS,
 	series = {Advances in {N}eural {I}nformation {P}rocessing {S}ystems},
-	xdata  = {Publisher:NeurIPSFoundation}
-)
+	xdata  = {Publisher:NeurIPSF}
+}
 
-@xdata(Series:PMLR,
+@xdata{Series:PMLR,
   series = {Proceedings of Machine Learning Research},
   issn   = {2640-3498}
-)
+}
 
-@xdata(Series:PSAM,
+@xdata{Series:PSAM,
 	series = {Proceedings of Symposia in Applied Mathematics},
 	issn   = {2324-7088},
 	xdata  = {Publisher:AMS}
-)
+}
 
-@xdata(Series:LNCS,
+@xdata{Series:LNCS,
 	series = {Lecture Notes in Computer Science},
 	issn   = {1611-3349},
 	xdata  = {Publisher:Springer}
-)
+}
 
-@proceedings{AMS_SC20_sum,
+@proceedings{AMS_SC20_sum-of-squares,
 	title           = {Sum of Squares},
 	number          = 77,
 	date            = {2020},
 	doi             = {10.1090/psapm/077},
-	editor          = Parrilo # and # Thomas,
+	editor          = ParriloPablo # and # ThomasRekha,
 	eventdate       = {2019-01-14/2019-01-15},
 	eventtitle      = AMS_SC,
 	eventtitleaddon = {Sum of Squares: Theory and Applications},
 	isbn            = {978-1-4704-5025-0},
 	subtitle        = {Theory and Applications},
-	venue           = {Baltimore} # in # US_MD,
+	venue           = {{B}altimore} # in # US_MD,
 	xdata           = {Series:PSAM}
 }
 
@@ -60,7 +60,7 @@
 	doi        = {10.1109/CEC20747.2013},
 	eventdate  = {2013-06-20/2013-06-23},
 	eventtitle = CEC,
-	venue      = {Cancún} # in # MX,
+	venue      = {{C}ancún} # in # MX,
 	xdata      = {Publisher:IEEE}
 }
 
@@ -70,18 +70,18 @@
 	date       = {2019-04-17},
 	eventdate  = {2019-06-25/2019-06-28},
 	eventtitle = COLT,
-	venue      = {Phoenix} # in # US_AZ,
+	venue      = {{P}hoenix} # in # US_AZ,
 	xdata      = {Series:PMLR}
 }
 
 @proceedings{EC18,
-	title      = {{ACM} EC'18},
+	title      = {{ACM} {EC}'18},
 	date       = {2018-06-11},
 	eventdate  = {2018-06-18/2018-06-22},
 	eventtitle = EC,
 	isbn       = {978-1-4503-5829-3},
 	subtitle   = {Proceedings of the 2018 {ACM} Conference on {E}conomics and {C}omputation},
-	venue      = {Ithaca} # in # US_NY,
+	venue      = {{I}thaca} # in # US_NY,
 	xdata      = {Publisher:ACM}
 }
 
@@ -99,7 +99,7 @@
 	eventdate  = {2024-05-07/2024-05-11},
 	eventtitle = ICLR,
 	subtitle   = {{ICLR} 2024},
-	venue      = {Vienna} # in # AT
+	venue      = {{V}ienna} # in # AT
 }
 
 @proceedings{IEEE_CDC16,
@@ -108,7 +108,7 @@
 	doi        = {10.1109/CDC32025.2016},
 	eventdate  = {2016-12-12/2016-12-14},
 	eventtitle = IEEE_CDC,
-	venue      = {Las Vegas} # in # US_NV,
+	venue      = {{L}as {V}egas} # in # US_NV,
 	xdata      = {Publisher:IEEE}
 }
 
