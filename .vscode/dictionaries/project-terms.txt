@@ -1,0 +1,15 @@
+Lyapunov
+nonnegative
+nonnegativity
+SIAR
+equilibria
+semialgebraic
+semidefinite
+monotonicity
+indeterminates
+functionals
+stationarity
+Putinar
+Putinar-type
+decompositions
+programme

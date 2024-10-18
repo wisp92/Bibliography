@@ -1,0 +1,8 @@
+{
+  "ltex.dictionary": {
+    "en-US": [
+      ":dictionaries/project-terms.txt",
+      ":dictionaries/project-names.txt"
+    ]
+  }
+}
