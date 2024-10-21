@@ -2,38 +2,39 @@
 % │                         Conference Titles                          │
 % └────────────────────────────────────────────────────────────────────┘
 
-@string{AMS_SC   = {{AMS} {S}hort {C}ourse}}
-@string{CEC      = {{C}ongress on {E}volutionary {C}omputation}}
-@string{COLT     = {{C}onference on {L}earning {T}heory}}
-@string{EC       = {{E}conomics and {C}omputation}}
-@string{ICLR     = {{I}nternational {C}onference on {L}earning {R}epresentations}}
-@string{IEEE_CDC = {{IEEE} {C}onference on {D}ecision and {C}ontrol}}
-@string{NeurIPS  = {{N}eural {I}nformation {P}rocessing {S}ystems}}
-@string{STOC     = {{S}ymposium on {T}heory of {C}omputing}}
-@string{WINE     = {{W}eb and {I}nternet {E}conomics}}
+@string{AMSShortCourse        = {{AMS} {S}hort {C}ourse}}
+@string{CongrEvolComput       = {{C}ongress on {E}volutionary {C}omputation}}
+@string{ConfLearnTheory       = {{C}onference on {L}earning {T}heory}}
+@string{EconComput            = {{E}conomics and {C}omputation}}
+@string{IntConfLearnRepresent = {{I}nternational {C}onference on {L}earning {R}epresentations}}
+@string{IntConfMachLearn      = {{I}nternational {C}onference on {M}achine {L}earning}}
+@string{IEEEConfDecisControl  = {{IEEE} {C}onference on {D}ecision and {C}ontrol}}
+@string{NeuralInfProcessSyst  = {{N}eural {I}nformation {P}rocessing {S}ystems}}
+@string{SympTheoryComput      = {{S}ymposium on {T}heory of {C}omputing}}
+@string{WebIntEcon            = {{W}eb and {I}nternet {E}conomics}}
 
 
 % ┌────────────────────────────────────────────────────────────────────┐
 % │                       Conference Proceedings                       │
 % └────────────────────────────────────────────────────────────────────┘
 
-@xdata{Series:AdvNeurIPS,
+@xdata{Series:AdvNeuralInfProcessSyst,
 	series = {Advances in {N}eural {I}nformation {P}rocessing {S}ystems},
 	xdata  = {Publisher:NeurIPSF}
 }
 
-@xdata{Series:PMLR,
+@xdata{Series:ProcMachLearnRes,
   series = {Proceedings of Machine Learning Research},
   issn   = {2640-3498}
 }
 
-@xdata{Series:PSAM,
+@xdata{Series:ProcSympApplMath,
 	series = {Proceedings of Symposia in Applied Mathematics},
 	issn   = {2324-7088},
 	xdata  = {Publisher:AMS}
 }
 
-@xdata{Series:LNCS,
+@xdata{Series:LectNotesComputSci,
 	series = {Lecture Notes in Computer Science},
 	issn   = {1611-3349},
 	xdata  = {Publisher:Springer}
@@ -46,20 +47,20 @@
 	doi             = {10.1090/psapm/077},
 	editor          = ParriloPablo # and # ThomasRekha,
 	eventdate       = {2019-01-14/2019-01-15},
-	eventtitle      = AMS_SC,
+	eventtitle      = AMSShortCourse,
 	eventtitleaddon = {Sum of Squares: Theory and Applications},
 	isbn            = {978-1-4704-5025-0},
 	subtitle        = {Theory and Applications},
 	venue           = {{B}altimore} # in # US_MD,
-	xdata           = {Series:PSAM}
+	xdata           = {Series:ProcSympApplMath}
 }
 
 @proceedings{CEC13,
 	title      = {2013 {IEEE} {C}ongress on {E}volutionary {C}omputation ({CEC})},
-	date       = {2013-04-08},
+	date       = {2013},
 	doi        = {10.1109/CEC20747.2013},
 	eventdate  = {2013-06-20/2013-06-23},
-	eventtitle = CEC,
+	eventtitle = CongrEvolComput,
 	venue      = {{C}ancún} # in # MX,
 	xdata      = {Publisher:IEEE}
 }
@@ -67,18 +68,18 @@
 @proceedings{COLT19,
 	title      = {Proceedings of the Thirty-Second {C}onference on {L}earning {T}heory},
 	number     = 99,
-	date       = {2019-04-17},
+	date       = {2019},
 	eventdate  = {2019-06-25/2019-06-28},
-	eventtitle = COLT,
+	eventtitle = ConfLearnTheory,
 	venue      = {{P}hoenix} # in # US_AZ,
-	xdata      = {Series:PMLR}
+	xdata      = {Series:ProcMachLearnRes}
 }
 
 @proceedings{EC18,
 	title      = {{ACM} {EC}'18},
-	date       = {2018-06-11},
+	date       = {2018},
 	eventdate  = {2018-06-18/2018-06-22},
-	eventtitle = EC,
+	eventtitle = EconComput,
 	isbn       = {978-1-4503-5829-3},
 	subtitle   = {Proceedings of the 2018 {ACM} Conference on {E}conomics and {C}omputation},
 	venue      = {{I}thaca} # in # US_NY,
@@ -87,75 +88,95 @@
 
 @proceedings{ICLR22,
 	title      = {{I}nternational {C}onference on {L}earning {R}epresentations},
-	date       = {2022-01-24},
+	date       = {2022},
 	eventdate  = {2022-04-25/2022-04-29},
-	eventtitle = ICLR,
+	eventtitle = IntConfLearnRepresent,
 	subtitle   = {{ICLR} 2022}
 }
 
 @proceedings{ICLR24,
 	title      = {{I}nternational {C}onference on {L}earning {R}epresentations},
-	date       = {2024-04-14},
+	date       = {2024},
 	eventdate  = {2024-05-07/2024-05-11},
-	eventtitle = ICLR,
+	eventtitle = IntConfLearnRepresent,
 	subtitle   = {{ICLR} 2024},
 	venue      = {{V}ienna} # in # AT
 }
 
+@proceedings{ICML23,
+	title      = {Proceedings of the 40th {I}nternational {C}onference on {M}achine {L}earning},
+	number     = 202,
+	date       = {2023},
+	eventdate  = {2023-07-23/2023-07-29},
+	eventtitle = IntConfMachLearn,
+	venue      = {{H}onolulu} # in # US_AZ,
+	xdata      = {Series:ProcMachLearnRes}
+}
+
+@proceedings{IEEE_CDC06,
+	title      = {Proceedings of the 45th {IEEE} {C}onference on {D}ecision and {C}ontrol},
+	date       = {2006},
+	doi        = {10.1109/CDC10086.2006},
+	eventdate  = {2006-12-13/2006-12-15},
+	eventtitle = IEEEConfDecisControl,
+	venue      = {{S}an {D}iego} # in # US_CA,
+	xdata      = {Publisher:IEEE}
+}
+
 @proceedings{IEEE_CDC10,
 	title      = {49th {IEEE} {C}onference on {D}ecision and {C}ontrol ({CDC})},
-	date       = {2010-09},
+	date       = {2010},
 	doi        = {10.1109/CDC16139.2010},
 	eventdate  = {2010-12-15/2010-12-17},
-	eventtitle = IEEE_CDC,
-	venue      = {Atlanta} # in # US_GA,
+	eventtitle = IEEEConfDecisControl,
+	venue      = {{A}tlanta} # in # US_GA,
 	xdata      = {Publisher:IEEE}
 }
 
 @proceedings{IEEE_CDC16,
 	title      = {2016 {IEEE} 55th {C}onference on {D}ecision and {C}ontrol ({CDC})},
-	date       = {2016-07},
+	date       = {2016},
 	doi        = {10.1109/CDC32025.2016},
 	eventdate  = {2016-12-12/2016-12-14},
-	eventtitle = IEEE_CDC,
+	eventtitle = IEEEConfDecisControl,
 	venue      = {{L}as {V}egas} # in # US_NV,
 	xdata      = {Publisher:IEEE}
 }
 
 @proceedings{NeurIPS20,
 	number     = 33,
-	date       = {2020-09-20},
+	date       = {2020},
 	eventdate  = {2020-12-06/2020-12-12},
-	eventtitle = NeurIPS,
+	eventtitle = NeuralInfProcessSyst,
 	isbn       = {978-1-7138-2954-6},
 	maintitle  = {34th Conference on {N}eural {I}nformation {P}rocessing {S}ystems ({N}eur{IPS} 2020)},
-	xdata      = {Series:AdvNeurIPS}
+	xdata      = {Series:AdvNeuralInfProcessSyst}
 }
 
 @proceedings{NeurIPS21,
 	number     = 34,
-	date       = {2021-09-28},
+	date       = {2021},
 	eventdate  = {2021-12-06/2021-12-14},
-	eventtitle = NeurIPS,
+	eventtitle = NeuralInfProcessSyst,
 	isbn       = {978-1-7138-4539-3},
 	maintitle  = {35th Conference on {N}eural {I}nformation {P}rocessing {S}ystems ({N}eur{IPS} 2021)},
-	xdata      = {Series:AdvNeurIPS}
+	xdata      = {Series:AdvNeuralInfProcessSyst}
 }
 
 @proceedings{NeurIPS23,
 	number     = 36,
-	date       = {2023-09-22},
+	date       = {2023},
 	eventdate  = {2023-12-10/2023-12-16},
-	eventtitle = NeurIPS,
+	eventtitle = NeuralInfProcessSyst,
 	isbn       = {978-1-7138-9992-1},
 	maintitle  = {37th Conference on {N}eural {I}nformation {P}rocessing {S}ystems ({N}eur{IPS} 2023)},
-	xdata      = {Series:AdvNeurIPS}
+	xdata      = {Series:AdvNeuralInfProcessSyst}
 }
 
 @proceedings{STOC21,
-	date         = {2021-06-15},
+	date         = {2021},
 	eventdate    = {2021-06-21/2021-06-25},
-	eventtitle   = STOC,
+	eventtitle   = SympTheoryComput,
 	isbn         = {978-1-4503-8053-9},
 	mainsubtitle = {Proceedings of the 53rd Annual {ACM} {SIGACT} {S}ymposium on {T}heory of {C}omputing},
 	maintitle    = {{STOC} 2021},
@@ -164,11 +185,11 @@
 
 @proceedings{WINE20,
 	number       = 12495,
-	date         = {2020-09-07},
+	date         = {2020},
 	eventdate    = {2020-12-07/2020-12-11},
-	eventtitle   = WINE,
+	eventtitle   = WebIntEcon,
 	isbn         = {978-3-030-64946-3},
 	mainsubtitle = {16th International Conference, {WINE} 2020, {B}eijing, {C}hina, {D}ecember 7–11, 2020, Proceedings},
 	maintitle    = {{W}eb and {I}nternet {E}conomics},
-	xdata        = {Series:LNCS}
+	xdata        = {Series:LectNotesComputSci}
 }
